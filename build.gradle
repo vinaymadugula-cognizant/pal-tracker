@@ -27,9 +27,8 @@ repositories {
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
-    testImplementation('junit:junit:4.13')
     testCompile("org.springframework.boot:spring-boot-starter-test:$springBootVersion")
-    testCompile("org.assertj:assertj-core:3.11.1")
+
 }
 
 bootRun.environment([
