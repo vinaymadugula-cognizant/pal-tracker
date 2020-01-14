@@ -79,17 +79,6 @@ public class InMemoryTimeEntryRepositoryTest {
     }
 
     @Test
-    public void update_MissingEntry() {
-        InMemoryTimeEntryRepository repo = new InMemoryTimeEntryRepository();
-
-        TimeEntry updatedEntry = repo.update(
-                1L,
-                new TimeEntry(321L, 654L, LocalDate.parse("2017-01-09"), 5));
-
-        assertThat(updatedEntry).isNull();
-    }
-
-    @Test
     public void delete() throws Exception {
         InMemoryTimeEntryRepository repo = new InMemoryTimeEntryRepository();
 
